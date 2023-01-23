@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap");
+
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+html {
+  height: 100%;
+  background-color: hsl(210, 31%, 80%);
+}
+
+.container {
+  font-family: "Unbounded", cursive;
+  font-size: em(30);
+  width: auto;
+  margin: auto;
+  ul {
+    list-style-type: none;
+    text-align: center;
+    padding: em(10);
+    li {
+      padding: em(10);
+      a {
+        color: hsl(203, 58%, 20%);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  li {
+    text-align: left;
+
+    a {
+      font-size: 18px;
+    }
+  }
+}

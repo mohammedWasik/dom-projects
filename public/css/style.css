@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap");
+html {
+  height: 100%;
+  background-color: hsl(210deg, 31%, 80%);
+}
+
+.container {
+  font-family: "Unbounded", cursive;
+  font-size: 1.875em;
+  width: auto;
+  margin: auto;
+}
+.container ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0.625em;
+}
+.container ul li {
+  padding: 0.625em;
+}
+.container ul li a {
+  color: hsl(203deg, 58%, 20%);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  li {
+    text-align: left;
+  }
+  li a {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
